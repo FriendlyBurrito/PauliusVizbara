@@ -1,0 +1,70 @@
+body{
+  width:100$;
+  margin: 0;
+}
+
+a {
+  font-family:'Lucida Sans Unicode';
+}
+.Navigation {
+
+}
+ .Navigation ul {
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: black;
+}
+ .Navigation li {
+    float: left;
+}
+ .Navigation li a {
+    font-size: 16px;
+    display: block;
+    color: white;
+    padding: 15px 24px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.Navigation li a:hover {
+    background-color: #43a9f2;
+    color: white;
+}
+
+#Pavadinimas{
+
+}
+
+
+.Pradinis  {
+  height: 600px;
+  background-color: black;
+}
+
+.Paslaugos{
+  height: 600px;
+  background-color: black;
+}
+
+.Pradinis  a{
+  /*display: block;*/
+  font-size: 30px;
+  position: absolute;
+  color: white;
+  position: relative;
+  float: left;
+  top: 15%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.Apie{
+  height: 600px;
+  background-color: white;
+}
