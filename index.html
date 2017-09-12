@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+  <div class="Navigation">
+  <ul >
+    <li><a href="default.asp">Pradinis</a></li>
+    <li><a href="news.asp">Apie mus</a></li>
+    <li><a href="contact.asp">Paslaugos</a></li>
+    <li><a href="about.asp">Kontaktai</a></li>
+    <!-- <li><a id="Pavadinimas"> The Edgy Store </a> -->
+  </ul>
+  </div>
+
+  <div style="max-width:100%">
+    <img class="mySlides" src="first.jpg" style="width:100%">
+    <img class="mySlides" src="second.jpg" style="width:100%">
+    <img class="mySlides" src="third.jpg" style="width:100%">
+  </div>
+
+ <script>
+var myIndex = 0;
+slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+  <div class="Pradinis">
+
+     <a class="BlockTitle"> The Edgy Store </a>
+
+  </div>
+
+  <div class="Apie">
+
+  </div>
+
+<div class="Paslaugos">
+
+</div>
+
+
+</body>
+
+
+
+</html>
