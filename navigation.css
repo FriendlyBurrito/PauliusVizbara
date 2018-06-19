@@ -2,15 +2,18 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
+   
     background-color: black;
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
     opacity: 0.8;
 }
 
+
 .Navigation  li{
     border-bottom: solid 1px white;
+
 }
+
 
 
 .Horizontal{

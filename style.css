@@ -1,32 +1,40 @@
 body {
-
+	margin: 0;
     color: white;
     font-family: "Courier New";
-    padding-top:2%;
-
     background-image: url("images/lowpoly01.jpg");
     background-attachment: fixed;
     background-repeat: round;
 }
-@media (min-width:1025px){
-	body{
-	padding-left: 15%;
-    padding-right: 15%;
-	}
 
-}
-.leftcolumn, .rightcolumn {
-    box-sizing: border-box;
-  
-}
+
 
 .leftcolumn {
-	width: 20%;
+	opacity: 0.8;
+	width: 15%;
+	height: 100%;
   	display:block;
-  	float: left;
     margin:0;
     padding: 0;
-    position: static;
+    position: fixed;
+    background-color: black;
+}
+
+@media screen and (max-width: 800px){
+	
+    ul.leftcolumn, 
+    ul.leftcolumn li,
+    ul.leftcolumn h3 {float: none;}
+
+    ul.leftcolumn {
+    	text-align: center;
+    	position: static;
+    	width: 100%;
+    	margin-bottom: 50px;
+    }
+    div.rightcolumn {
+    	width: 100%;
+    	margin-left: 0;}
 }
 
 .Carousel{
@@ -34,14 +42,15 @@ body {
 	max-width: 100%;
 }
 .rightcolumn {
-	width: 75%;
-    float: left;
-    margin-left:5%;
-    padding: 0;
+
+    margin-left:20%;
+    margin-right: 10%;
+
+
 }
 
 .contentcard{
-	  opacity: 0.8;
+	opacity: 0.8;
 	background-color: black;
 	padding: 30px;
 	margin-bottom: 40px;
