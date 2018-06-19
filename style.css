@@ -21,7 +21,7 @@ body {
 }
 
 .leftcolumn {
-	max-width: 15%;
+	width: 20%;
   	display:block;
   	float: left;
     margin:0;
