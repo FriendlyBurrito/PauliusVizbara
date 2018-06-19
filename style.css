@@ -23,7 +23,7 @@ body {
 .leftcolumn {
 	max-width: 15%;
   	display:block;
-  	 float: left;
+  	float: left;
     margin:0;
     padding: 0;
     position: static;
