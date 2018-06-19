@@ -37,14 +37,18 @@ body {
 @media screen and (max-device-width: 1020px){
 
 	.rightcolumn {
-		font-size: 28px;
+		font-size: 35px;
+
 	}
 	
+	.Link{
+		font-size: 40px;
+	}
     ul.leftcolumn, 
     ul.leftcolumn li,
-    ul.leftcolumn h3 {float: none; font-size: 30px;}
+    ul.leftcolumn h3 {float: none; font-size: 50px;}
 	ul.leftcolumn h3{
-		font-size: 40px;
+		font-size: 60px;
 	}
     ul.leftcolumn {
     	text-align: center;
@@ -92,6 +96,7 @@ body {
 .Link{
 	text-decoration:none;
 	color:#DE5AB4;
+	font-size: 20px;
 }
 #kontaktuSarasas{
 	 list-style-type: none;
