@@ -3,24 +3,29 @@ body {
     color: white;
     font-family: "Courier New";
     padding-top:2%;
-    padding-left: 15%;
-    padding-right: 15%;
+
     background-image: url("images/lowpoly01.jpg");
     background-attachment: fixed;
+    background-repeat: round;
 }
+@media (min-width:1025px){
+	body{
+	padding-left: 15%;
+    padding-right: 15%;
+	}
 
+}
 .leftcolumn, .rightcolumn {
     box-sizing: border-box;
   
 }
 
 .leftcolumn {
-	
+	max-width: 15%;
   	display:block;
-    max-width: 15%;
-    position: fixed;
     margin:0;
     padding: 0;
+    position: fixed;
 }
 
 .Carousel{
@@ -28,12 +33,10 @@ body {
 	max-width: 100%;
 }
 .rightcolumn {
-
+	max-width: 80%;
     float: right;
-    width: 80%;
     margin:0;
     padding: 0;
-    
 }
 
 .contentcard{
