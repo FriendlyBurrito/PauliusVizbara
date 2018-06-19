@@ -23,9 +23,10 @@ body {
 .leftcolumn {
 	max-width: 15%;
   	display:block;
+  	 float: left;
     margin:0;
     padding: 0;
-    position: fixed;
+    position: static;
 }
 
 .Carousel{
@@ -33,9 +34,9 @@ body {
 	max-width: 100%;
 }
 .rightcolumn {
-	max-width: 80%;
-    float: right;
-    margin:0;
+	width: 75%;
+    float: left;
+    margin-left:5%;
     padding: 0;
 }
 
