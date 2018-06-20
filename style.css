@@ -7,9 +7,31 @@ body {
   	font-family: cursive , "Times New Roman", serif;;
     background-image: url("images/lowpoly01.jpg");
     background-attachment: fixed;
-    background-repeat: round;
+
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #FF6257;
+
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #F5F3F3;
+}
 
 
 .leftcolumn {
@@ -22,8 +44,12 @@ body {
     padding: 0;
     position: fixed;
     background-color: black;
+
 }
 
+.Navigation {
+	  overflow: auto;
+}
 .Link{
 	text-decoration:none;
 	color:#DE5AB4;
@@ -59,7 +85,7 @@ body {
 	.Link{
 		font-size: 40px;
 	}
-    ul.leftcolumn, 
+    ul.leftcolumn,
     ul.leftcolumn li,
     ul.leftcolumn h3 {float: none; font-size: 50px;}
 	ul.leftcolumn h3{
