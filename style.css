@@ -22,6 +22,12 @@ body {
     background-color: black;
 }
 
+.Link{
+	text-decoration:none;
+	color:#DE5AB4;
+	font-size: 20px;
+}
+
 @media screen and (max-width: 1200px){
 
 	.rightcolumn {
@@ -31,6 +37,8 @@ body {
 	ul.leftcolumn  h3{
     	font-size: 14px;
     }
+
+
 
 
 }
@@ -93,11 +101,7 @@ body {
 	min-height: 350px;
 }
 
-.Link{
-	text-decoration:none;
-	color:#DE5AB4;
-	font-size: 20px;
-}
+
 #kontaktuSarasas{
 	 list-style-type: none;
 }
