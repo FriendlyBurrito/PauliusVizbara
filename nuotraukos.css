@@ -3,7 +3,8 @@
 	margin-left: 20px;
 	max-width: 250px;
 	float: right;
-	position: static;
+	padding: 50px;
+  position:relative;
 }
 
 .CoHSkaidres{
