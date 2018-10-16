@@ -13,7 +13,13 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
+img{
+	  transition: 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
 
+a{
+	text-decoration: none;
+}
 /* Track */
 ::-webkit-scrollbar-track {
     background: #FF6257;
