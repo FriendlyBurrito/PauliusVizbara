@@ -1,24 +1,24 @@
+:root {
+    --transparent-background: rgba(0,0,0,0.8);
+    --text-color: #ddd;
+}
+
 body{
-    overflow: hidden;
     font-size:12px;
+    padding: 0;
+    margin: 0;
 }
 
 *{
     font-family: 'Raleway', sans-serif;
+
 }
-.background{
+body{
+    background-image: url("images/pattern1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    position:fixed;
-    padding:0;
-    margin:0;
-    top:0;
-    left:0;
-    overflow: hidden;
     -webkit-transition: 0.2s -webkit-filter linear;
     -moz-transition: 0.2s -moz-filter linear;
     -moz-transition: 0.2s filter linear;
@@ -26,7 +26,6 @@ body{
     -o-transition: 0.2s -o-filter linear;
     transition: 0.2s filter linear, 0.2s -webkit-filter linear;
     z-index: 0;
-
 }
 
 .homeBG{
@@ -56,8 +55,6 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
-
-
 }
 
 .absoluteCentered{
@@ -72,7 +69,7 @@ body{
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: var(--transparent-background);
     margin: 0 3rem;
     transition: all 0.1s ease-in;
 }
@@ -87,5 +84,52 @@ body{
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
-   /* font-size: 1rem;*/
+
+}
+
+/* Inside menu */
+.insideMenu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--transparent-background);
+
+}
+
+.navigation-spacer{
+    height: 2rem;
+}
+.insideMenu li{
+    display:inline-block;
+    padding: 1rem;
+}
+
+.insideMenu li a{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.insideMenu li a:hover{
+    color: white;
+}
+
+
+/* Main container */
+.card{
+    width:50%;
+    height:auto;
+    background-color: var(--transparent-background);
+    padding: 2rem;
+    margin:3rem auto 0 auto;
+
+}
+
+.card p{
+    color: var(--text-color);
 }
