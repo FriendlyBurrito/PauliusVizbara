@@ -8,19 +8,17 @@
    .mainNavigation{
         flex-direction: column;
     }
+
     .homeCard{
         margin-bottom: 2rem;
-    }
-   /* .homeCard{
-        margin-bottom: 2rem;
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 10rem;
 
     }
     .homeCard span{
         font-size: 1.2rem;
     }
-*/
+
     .flexBoxContainer{
         flex-direction: column;
     }
