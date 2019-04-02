@@ -1,8 +1,6 @@
 
 @media only screen and  (max-width: 576px) {
-    *{
-        background: red !important;
-    }
+
 }
 
 
@@ -13,11 +11,30 @@
     .homeCard{
         margin-bottom: 2rem;
     }
-    :root{
-        font-size: 26px;
+   /* .homeCard{
+        margin-bottom: 2rem;
+        width: 8rem;
+        height: 8rem;
+
     }
+    .homeCard span{
+        font-size: 1.2rem;
+    }
+*/
     .flexBoxContainer{
         flex-direction: column;
+    }
+
+    .insideMenu{
+        position: static;
+    }
+    .insideMenu li{
+        
+        display: block;
+
+    }
+    .navigation-spacer{
+        display: none;
     }
 }
 
