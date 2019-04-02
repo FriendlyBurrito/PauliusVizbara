@@ -1,0 +1,26 @@
+
+@media only screen and  (max-width: 576px) {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+   .mainNavigation{
+        flex-direction: column;
+    }
+    .homeCard{
+        margin-bottom: 2rem;
+    }
+    :root{
+        font-size: 26px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
