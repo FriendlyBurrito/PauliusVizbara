@@ -64,8 +64,10 @@ body:before {
     justify-content: center;
     margin: 0;
 }
-.mainNavigation{
-    outline: none;
+.mainNavigation a:active,.mainNavigation a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
 }
 .absoluteCentered{
     position: absolute;
