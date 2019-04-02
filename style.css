@@ -30,6 +30,8 @@ body{
 
 .homeBG{
     background-image: url("images/pattern0.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 .portfolioBG{
     background-image: url("images/pattern1.png");
