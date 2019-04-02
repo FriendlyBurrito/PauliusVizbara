@@ -122,7 +122,7 @@ body{
 
 /* Main container */
 .card{
-    width:50%;
+    width:90%;
     height:auto;
     background-color: var(--transparent-background);
     padding: 2rem;
@@ -132,4 +132,39 @@ body{
 
 .card p{
     color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.site-logo {
+    max-width: 20rem;
+    margin: 0 2rem;
+}
+
+.card *{
+    text-align: center;
+}
+.card h1{
+   color: var(--text-color);
+    font-size: 3rem;
+}
+
+.flexBoxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.fullsizeLogo{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Column flexbox */
+
+.twocolumnFlexbox .column{
+    width: 50%;
 }
