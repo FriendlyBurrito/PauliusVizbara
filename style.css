@@ -16,20 +16,23 @@ body{
     box-sizing: border-box;
 
 }
-body{
-    background-image: url("images/pattern1.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("images/pattern1.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    -webkit-transition: 0.2s -webkit-filter linear;
-    -moz-transition: 0.2s -moz-filter linear;
-    -moz-transition: 0.2s filter linear;
-    -ms-transition: 0.2s -ms-filter linear;
-    -o-transition: 0.2s -o-filter linear;
-    transition: 0.2s filter linear, 0.2s -webkit-filter linear;
-    z-index: 0;
 }
+
+
 
 .homeBG{
     background-image: url("images/pattern0.jpg");
