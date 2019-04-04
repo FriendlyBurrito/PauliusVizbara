@@ -1,6 +1,7 @@
 :root {
     --transparent-background: rgba(0,0,0,0.93);
     --transparent-menu-background: rgba(0,0,0,0.96);
+    --transparent-menu-background-mobile: rgba(0,0,0,0.85);;
     --text-color: #ddd;
     --title-color: #eee;
 }

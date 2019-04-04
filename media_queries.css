@@ -26,7 +26,9 @@
     #insideMenu {
         position: static;
     }
-
+    #insideMenu{
+        background-color: var(--transparent-menu-background-mobile);
+    }
     #insideMenu li {
 
         display: block;
