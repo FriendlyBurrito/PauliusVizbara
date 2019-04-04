@@ -1,39 +1,62 @@
-
 @media only screen and  (max-width: 576px) {
 
 }
 
 
 @media only screen and (max-width: 768px) {
-   .mainNavigation{
+    .mainNavigation {
         flex-direction: column;
     }
 
-    .homeCard{
+    .homeCard {
         margin-bottom: 2rem;
         width: 10rem;
         height: 10rem;
 
     }
-    .homeCard span{
+
+    .homeCard span {
         font-size: 1.2rem;
     }
 
-    .flexBoxContainer{
+    .flexBoxContainer {
         flex-direction: column;
     }
 
-    .insideMenu{
+    .insideMenu {
         position: static;
     }
-    .insideMenu li{
-        
+
+    .insideMenu li {
+
         display: block;
 
     }
-    .navigation-spacer{
+
+    .navigation-spacer {
         display: none;
     }
+
+    .twocolumnFlexbox {
+        flex: 100%;
+    }
+
+    .site-logo {
+        max-width: 100%;
+        margin: 2rem 0 0 0;
+    }
+
+    .twocolumnFlexbox.sonatos .column.description {
+        order: 1;
+    }
+
+    .twocolumnFlexbox.sonatos .column.logo {
+        order: 2;
+    }
+    .sonatos .logo img{
+        max-width:90%;
+    }
+
 }
 
 
@@ -42,5 +65,26 @@
 }
 
 @media only screen and (max-width: 1200px) {
-
+    .site-logo{
+        margin-bottom: 1rem;
+    }
+    .flexBoxContainer a{
+        order: 2;
+    }
+    .flexBoxContainer .lean{
+        order: 1;
+    }
 }
+
+@media only screen and (min-width: 1200px) {
+
+    .cardDescription{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+    }
+    
+}
+

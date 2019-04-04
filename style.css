@@ -105,6 +105,7 @@ body:before {
 /* Inside menu */
 .insideMenu{
     position: fixed;
+    z-index: 10;
     top: 0;
     width: 100%;
     text-align: center;
@@ -137,7 +138,7 @@ body:before {
 
 /* Main container */
 .card{
-    width:90%;
+    width:70%;
     height:auto;
     background-color: var(--transparent-background);
     padding: 2rem;
@@ -147,14 +148,16 @@ body:before {
 
 .card p{
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .site-logo {
     max-width: 20rem;
     margin: 0 2rem;
 }
-
+.cardDescription{
+    margin-bottom: 2rem;
+}
 .card *{
     text-align: center;
 }
@@ -172,7 +175,7 @@ body:before {
 
 
 .fullsizeLogo{
-    width: 60%;
+    flex: 60%;
     display: block;
     margin: 0 auto;
 }
@@ -181,5 +184,17 @@ body:before {
 /* Column flexbox */
 
 .twocolumnFlexbox .column{
-    width: 50%;
+    flex: 50%;
+}
+
+
+/* Freelance */
+.sonatos .logo img{
+    max-width: 60%;
+}
+
+
+a{
+    color: #D1740F;
+    text-decoration: none;
 }
