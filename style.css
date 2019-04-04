@@ -1,6 +1,8 @@
 :root {
-    --transparent-background: rgba(0,0,0,0.8);
+    --transparent-background: rgba(0,0,0,0.93);
+    --transparent-menu-background: rgba(0,0,0,0.96);
     --text-color: #ddd;
+    --title-color: #eee;
 }
 
 body{
@@ -25,7 +27,7 @@ body:before {
     width: 100%;
     height: 100%;
     z-index: -10;
-    background: url("images/pattern1.png") no-repeat center center;
+    background: url("images/pattern0.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -103,7 +105,7 @@ body:before {
 }
 
 /* Inside menu */
-.insideMenu{
+#insideMenu{
     position: fixed;
     z-index: 10;
     top: 0;
@@ -113,25 +115,25 @@ body:before {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--transparent-background);
+    background-color: var(--transparent-menu-background);
 
 }
 
-.navigation-spacer{
-    height: 2rem;
+#navigation-spacer{
+    height: 3rem;
 }
-.insideMenu li{
+#insideMenu li{
     display:inline-block;
     padding: 1rem;
 }
 
-.insideMenu li a{
+#insideMenu li a{
     color: var(--text-color);
     font-size: 1.2rem;
     text-decoration: none;
 }
 
-.insideMenu li a:hover{
+#insideMenu li a:hover{
     color: white;
 }
 
@@ -161,9 +163,17 @@ body:before {
 .card *{
     text-align: center;
 }
-.card h1{
-   color: var(--text-color);
-    font-size: 3rem;
+.card .cardTitle{
+    color: var(--title-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.card h2{
+    /*border-top: 1px solid var(--text-color);*/
+   color: var(--title-color);
+    font-size: 2rem;
+    margin-bottom: 0;
 }
 
 .flexBoxContainer{
@@ -173,6 +183,13 @@ body:before {
     flex-wrap: wrap;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -5.5rem;
+    visibility: hidden;
+}
+
 
 .fullsizeLogo{
     flex: 60%;
@@ -180,7 +197,16 @@ body:before {
     margin: 0 auto;
 }
 
-
+.cardSection{
+    /*padding-top: 4rem;*/
+}
+.cardSection:after{
+    display:block;
+    content:"";
+    border-bottom: 1px solid var(--title-color);
+    width: 30%;
+    margin: 1rem auto 3rem auto;
+}
 /* Column flexbox */
 
 .twocolumnFlexbox .column{
@@ -198,3 +224,24 @@ a{
     color: #D1740F;
     text-decoration: none;
 }
+
+
+/* Scrollable */
+
+#insideMenu.extended li{
+    padding: 2rem;
+}
+#insideMenu.extended li a{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#insideMenu *{
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition:0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+

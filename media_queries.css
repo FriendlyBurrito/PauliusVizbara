@@ -23,11 +23,11 @@
         flex-direction: column;
     }
 
-    .insideMenu {
+    #insideMenu {
         position: static;
     }
 
-    .insideMenu li {
+    #insideMenu li {
 
         display: block;
 
@@ -61,10 +61,17 @@
 
 
 @media only screen and (max-width: 992px) {
+    .cardSection:after {
+        width: 80%;
 
+    }
+    .card{
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
+
     .site-logo{
         margin-bottom: 1rem;
     }

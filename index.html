@@ -1,42 +1,149 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title> Paulius Vizbara | CV </title>
     <link rel="icon" href="images/codeIcon.png"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="media_queries.css"/>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="slider.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+
 
 </head>
-
 <body>
 
-<nav class="mainNavigation absoluteCentered">
 
-    <a href="portfolio.html">
-        <div class="homeCard">
-           <span class="homeCardTitle absoluteCentered"> Portfolio </span>
+<ul id="insideMenu" class="extended">
+    <li><a class="menuLink" href="#portfolio">Portfolio</a></li>
+    <li><a class="menuLink" href="#about-me">About me</a></li>
+    <li><a class="menuLink" href="#contacts">Contacts</a></li>
+</ul>
+
+<div id="navigation-spacer"> &nbsp;</div>
+<div class="card">
+    <a class="anchor" id="portfolio"> Anchor</a>
+    <h1 class="cardTitle"> Portfolio </h1>
+
+    <div class="cardSection">
+
+        <h2> EMTC </h2>
+        <p class="cardDescription"> These are the websites I've built during the time I worked at EMTC. All of them are
+            built on Wordpress, with style and functionality tweaks of my own. </p>
+
+        <div class="flexBoxContainer">
+
+            <a href="https://ndma.lt/" target="_blank"> <img class="site-logo" src="images/ndma_logo.png"/> </a>
+            <a class="lean" href="http://leanproject.eu/" target="_blank"> <img class="site-logo"
+                                                                                src="images/lean_logo.png"/> </a>
+            <a href="http://mennet.beti.lt/" target="_blank"> <img class="site-logo" src="images/mennet_logo.png"/> </a>
+
+
         </div>
-    </a>
+    </div>
 
-    <a href="aboutme.html">
-        <div class="homeCard">
-            <span class="homeCardTitle absoluteCentered"> About me </span>
+    <div class="cardSection">
+        <h2> Freelance </h2>
+        <div class="flexBoxContainer twocolumnFlexbox sonatos">
+            <div class="column logo">
+                <a href="https://sonatosmedelynas.lt/" target="_blank"> <img src="images/sonatosmedelynas_logo.png"/>
+                </a>
+            </div>
+            <div class="column description">
+                <p> My first (and currently only) freelance work. It's an e-shop built on wordpress and
+                    woocommerce. </p>
+            </div>
         </div>
-    </a>
+    </div>
+    <div class="cardSection" id="tools">
 
-    <a href="contacts.html">
-        <div class="homeCard">
-            <span class="homeCardTitle absoluteCentered"> Contacts </span>
+        <h2> Tools </h2>
+        <p class="cardDescription">
+            <a href="https://pauliusvizbara.github.io/GyvenoGrafas/"> This is an app </a> that I've developed when
+            studying Discrete Structures. It's a tool for drawing and plotting
+            graphs. It was intended to be used only by me and my classmates
+            to make studying and solving tests easier. Built with pure JavaScript and <a
+                href="https://p5js.org/"> p5</a> drawing library
+
+
+        </p>
+
+    </div>
+</div>
+
+<div class="card">
+    <a class="anchor" id="about-me"></a>
+    <h1 class="cardTitle"> About me </h1>
+    <p class="cardDescription"> Hello! I'm Paulius Vizbara, currently a second year student in KTU Software systems.
+        I also work at <a href="https://www.facebook.com/ktuemtc/">KTU EMTC</a>, where I primarily develop websites.
+        Asides from work and studies, I've often tinkered around with Virtual Reality: I've participated in public
+        events with <a href="https://ktu.edu/"> KTU </a> and
+        <a href="https://jkm.ktu.edu/">JKM</a>,
+        where we showcase VR capabilities and let people try out games and apps, and I am a teacher of VR Game making in
+        Unity
+        at <a href="https://jkm.ktu.edu/">JKM</a>.</p>
+    <div class="slideshow-container">
+
+        <div class="slide fade">
+            <img src="images/me/alta.jpg">
         </div>
-    </a>
-</nav>
+        <div class="slide fade">
+            <img src="images/me/studiju-muge2.JPG">
+        </div>
+        <div class="slide fade">
+            <img src="images/me/studiju-muge1.JPG" style="width:100%">
+        </div>
+        <div class="slide fade">
+            <img src="images/me/jkm1.jpg">
+        </div>
+        <div class="slide fade">
+            <img src="images/me/jkm2.jpg">
+        </div>
 
-<!-- <div class="background homeBG"></div> -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="sliderDot" onclick="currentSlide(1)"></span>
+        <span class="sliderDot" onclick="currentSlide(2)"></span>
+        <span class="sliderDot" onclick="currentSlide(3)"></span>
+        <span class="sliderDot" onclick="currentSlide(4)"></span>
+        <span class="sliderDot" onclick="currentSlide(5)"></span>
+    </div>
+
+</div>
+
+<div class="card" id="lastcard" >
+    <a class="anchor" id="contacts"></a>
+    <h1 class="cardTitle"> Contacts </h1>
+    <h2> Have a question? Let me know!</h2>
+    <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:paulius1207@gmail.com">paulius1207@gmail.com</a>
+    </p>
+    <p>
+        <i class="fas fa-phone"></i>
+        <span style="font-family: 'Heebo', sans-serif;">+370 6857 2443 </span>
+    </p>
+    <p>
+        <i class="fab fa-linkedin"></i>
+        <a target="_blank" href="https://www.linkedin.com/in/paulius-vizbara-58905516b/"> LinkedIn profile</a>
+    </p>
+
+    <p>
+        <i class="fab fa-facebook"></i>
+        <a target="_blank" href="https://www.facebook.com/paulius.vizbara"> Facebook profile</a>
+    </p>
+</div>
+
+<script src="main.js"></script>
 </body>
-
 </html>
