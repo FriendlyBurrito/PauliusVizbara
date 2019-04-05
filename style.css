@@ -156,7 +156,7 @@ body:before {
 
 .site-logo {
     max-width: 20rem;
-    margin: 0 2rem;
+    margin: 0 4rem;
 }
 .cardDescription{
     margin-bottom: 2rem;
@@ -204,9 +204,8 @@ a.anchor {
 .cardSection:after{
     display:block;
     content:"";
-    border-bottom: 1px solid var(--title-color);
     width: 30%;
-    margin: 1rem auto 3rem auto;
+    margin: 1rem auto 8rem auto;
 }
 /* Column flexbox */
 
@@ -238,6 +237,9 @@ a{
     font-weight: bold;
 }
 
+#insideMenu.extended li a:hover{
+    color: #ddd;
+}
 #insideMenu *{
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
